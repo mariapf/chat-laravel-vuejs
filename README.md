@@ -1,3 +1,24 @@
+#Chat Application in Laravel and Vue Js
+
+This application makes use of the package [laravel-websockets](https://github.com/beyondcode/laravel-websockets) as an open source alternative to Pusher
+
+##Enable database connection outside the box
+Edit pg_hba.conf file, e.g
+
+```
+sudo nano /etc/postgresql/10/main/pg_hba.conf
+```
+Append to end of file and save
+
+```
+host  all  all 0.0.0.0/0 md5
+```
+Restart process
+
+```
+sudo service postgresql restart
+```
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
